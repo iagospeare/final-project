@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h1>All Exercises</h1>
+
+<p> Note-do not rest in between moves only between rounds <br />
+1 round = each move for specified amount of time <br/>
+Rest 30 seconds in between each round </p>
+
+<p> 
+The Get That workout program implements High Intensity Interval Training (HIIT) in each and every one of the workouts.  HIIT involves bursts of intense exercise followed by short rest periods and burns more fat than the typical exercise. The Get That workouts will increases your Metabolism, are quick and convieniet, and require no gym equipment! Our workouts from beginning to end take about 30 minutes to complete so they are ideal for those with a busy schedule. 
+<p>
+<table id="all-workouts">
+
+<% i = 0%>
+<% @exercises.each do |exercise| %>
+	
+	<% if( i == 0) %>
+		<tr>
+	<%end%>
+	<td> 
+	<h1> <%= exercise.name %></h1>
+	<iframe width="420" height="315" src="https://www.youtube.com/embed/<%= exercise.url %>" frameborder="0" allowfullscreen></iframe>
+	<div id="description">
+		<ul><%  x = exercise.description.split("-") %>
+		<% x.each do |r| %>
+			<p><li> <%=r %> </li></p>
+		<%end %>
+		</ul>
+	</td>
+	</div>
+<% i = i+1%> 
+<% if(i == 3) %>
+	</tr>
+	<% i = 0 %>
+<%end%>
+
+
+<%end%>
+</table>
+<br>

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<!--<h1>Your Four Week Calendar</h1>-->
+<div class = "calHead">
+<%= month_calendar events: @exercises do |date, exercises| %>
+</div>
+  
+  <%= date.day %>
+
+  <% exercises.each do |exercise| %>
+    <div style="text-align: center;">
+      
+     <% x = exercise.name %> <br>
+      <!--<%= exercise.start_time.strftime('%R') %>-->
+      <%= link_to x, pages_about_path(anchor: "day#{exercise.id}") %> 
+    </div>
+  <% end %>
+<% end %>
+
+<br>

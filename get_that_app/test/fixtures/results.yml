@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  weight: 
+  length: 2015-12-03 13:25:55
+  experience: 1
+  account_id: 1
+  workout_id: 1
+
+two:
+  weight: 
+  length: 2015-12-03 13:25:55
+  experience: 1
+  account_id: 1
+  workout_id: 1

@@ -1,0 +1,19 @@
+
+<%#= link_to "All Exercises in the Program", exercises_path %>
+
+
+<!--<p>Find me in app/views/home/index.html.erb</p>-->
+
+<div id = "splash">
+
+	<h1 id = "mainTitle">GetThat</h1>
+
+
+	<p id = "introPara">You know what your goal is but you don't know how to get there. We can help you Get That.</p>
+	<div class = "btn">
+		<%= link_to('Sign Up', new_user_registration_path, { :class=>"button" })  %>
+		<br>
+	</div>
+	<%= link_to('Already a user? Sign in.', new_user_session_path, { :id=>"signIn"})%>
+	
+</div>

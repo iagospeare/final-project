@@ -1,0 +1,128 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ */
+
+
+
+
+body
+{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	color:white;
+	/*background-color:#e9404a;*/
+	/*background-color:#e94038;*/
+	background-color:#A31300;
+	/*width:50%; */
+	margin:15% 39%;
+	text-align: center;
+	width:25%;
+
+	
+	
+	
+}
+
+
+
+h2
+{
+	
+	font-weight: 300;
+	
+}
+
+a
+{
+	color:white;
+}
+
+input[type="submit"] {
+	-webkit-border-radius: 15;
+	-moz-border-radius: 15;
+	border-radius: 15px;
+	color: #ffffff;
+	font-size: 20px;
+	background: none;
+	padding: 10px 20px 10px 20px;
+	border: solid #ffffff 2px;
+	text-decoration: none;
+   
+   
+   }
+input[type="submit"]:hover {
+   text-decoration: none;
+   color: #C0C0C0;
+   border: solid #C0C0C0 2px;
+   
+   }
+   
+   .field>input, .field_with_errors>input {
+   	color:#3c3c3c;
+   	font-family: Helvetica, Arial, sans-serif;
+     font-weight:500;
+   	font-size: 18px;
+   	border-radius: 0;
+   	line-height: 22px;
+   	background-color: #fbfbfb;
+   	padding: 13px 13px 13px 13px;
+   	margin-bottom: 10px;
+   	width:100%;
+   	-webkit-box-sizing: border-box;
+   	-moz-box-sizing: border-box;
+   	-ms-box-sizing: border-box;
+   	box-sizing: border-box;
+     border: 3px solid rgba(0,0,0,0);
+   }
+
+   .feedback-input:focus{
+   	background: #fff;
+   	box-shadow: 0;
+   	border: 3px solid #3498db;
+   	color: #3498db;
+   	outline: none;
+     padding: 13px 13px 13px 13px;
+   }
+   
+   ::-webkit-input-placeholder {
+      text-align: center;
+   }
+
+   :-moz-placeholder { /* Firefox 18- */
+      text-align: center;  
+   }
+
+   ::-moz-placeholder {  /* Firefox 19+ */
+      text-align: center;  
+   }
+
+   :-ms-input-placeholder {  
+      text-align: center; 
+   }
+   
+   #error_explanation>h2, #error_explanation li
+   {
+	   font-size:80%;
+	   list-style-type: none;
+	   margin-top:5px;
+	   margin-bottom:5px;
+   }
+   
+   #error_explanation ul
+   {
+	   padding-left:0;
+	   margin-top:0;
+	   
+   }
+  

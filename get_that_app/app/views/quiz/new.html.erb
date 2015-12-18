@@ -1,0 +1,77 @@
+<!-- Author: Jody Smith -->
+    <%= form_for @quiz, url: {action: 'create'}, html: {class: "nifty_form"} do |f| %>
+    <h2>First let's get some information about you</h2>
+    <%= label_tag(:feet, 'Height')%><br/>
+    <%= f.text_field :feet, :placeholder => "feet"%>
+    <%= label_tag(:inches, '')%>
+    <%= f.text_field :inches, :placeholder =>"inches"%>
+    <br/>
+    <%= label_tag(:weight, 'Weight')%>
+    <%= f.text_field :weight, :placeholder =>"pounds"%>
+    <br/>
+    <%= label_tag(:lose, 'How much weight would you like to lose?')%>
+    <%= f.text_field :lose, :placeholder =>"pounds"%>
+    <p>What are your goals?</p>
+    <%= f.radio_button :goal, '5' %>
+    <%= label_tag(:goal_5, 'Lose Weight')%>
+    <%= f.radio_button :goal, '3' %>
+    <%= label_tag(:goal_3, 'Tone')%>
+    <p>Is working out fun for you?</p>
+    <%= f.radio_button :fun, '5'  %>
+    <%= label_tag(:fun_5, 'Yes')%>
+    <%= f.radio_button :fun, '0'  %>
+    <%= label_tag(:fun_0, 'No')%>
+    <p>Have you tried a serious workout routune before?</p>
+    <%= f.radio_button :experience, '3' %>
+    <%= label_tag(:experience_3, 'Yes')%>
+    <%= f.radio_button :experience, '0' %>
+    <%= label_tag(:experience_0, 'No')%>
+    <h2>Below here, the questions are optional but will help us to personalize your workout.</h2>
+    <p>What is the longest you have kept with a workout plan?</p>
+    <%= f.radio_button :longest, '0' %>
+    <%= label_tag(:longest_0, 'Not very long')%>
+    <%= f.radio_button :longest, '2' %>
+    <%= label_tag(:longest_2, 'Less than 2 weeks')%>
+    <%= f.radio_button :longest, '3' %>
+    <%= label_tag(:longest_3, 'Between 2 weeks and 2 months')%>
+    <%= f.radio_button :longest, '5' %>
+    <%= label_tag(:longest_5, 'More than 2 months')%>
+    <p>What section of your body would you most like to improve?</p>
+    <%= f.radio_button :section, '0' %>
+    <%= label_tag(:section_0, 'Everything')%>
+    <%= f.radio_button :section, '1' %>
+    <%= label_tag(:section_1, 'Belly')%>
+    <%= f.radio_button :section, '2' %>
+    <%= label_tag(:section_2, 'Arms')%>
+    <%= f.radio_button :section, '3' %>
+    <%= label_tag(:section_3, 'Legs')%>
+    <%= f.radio_button :section, '4' %>
+    <%= label_tag(:section_4, 'butt') %>
+    <p>How long is an average workout for you?</p>
+    <%= f.radio_button :average, '0' %>
+    <%= label_tag(:average_0, 'Not very long')%>
+    <%= f.radio_button :average, '0' %>
+    <%= label_tag(:average_1, '5 to 15 minutes')%>
+    <%= f.radio_button :average, '0' %>
+    <%= label_tag(:average_3, '15 to 30 minutes')%>
+    <%= f.radio_button :average, '0' %>
+    <%= label_tag(:average_5, 'More than 30 minutes')%>
+    <p>Do you have a time frame that you'd like to achieve your goal?</p>
+    <%= f.radio_button :achieve, '0' %>
+    <%= label_tag(:achieve_0, 'Not really')%>
+    <%= f.radio_button :achieve, '7' %>
+    <%= label_tag(:achieve_7, 'ASAP')%>
+    <%= f.radio_button :achieve, '3' %>
+    <%= label_tag(:achieve_3, 'In a couple of months')%>
+    <%= f.radio_button :achieve, '1' %>
+    <%= label_tag(:achieve_1, 'Next season')%>
+    <p>What is your favorite kind of workout?</p>
+    <%= f.radio_button :favorite, '6' %>
+    <%= label_tag(:favorite_6, 'Quick and Intense')%>
+    <%= f.radio_button :favorite, '3' %>
+    <%= label_tag(:favorite_3, 'Endurance')%>
+    <%= f.radio_button :favorite, '0' %>
+    <%= label_tag(:favorite_0, 'Smooth and Easy')%>
+</br>
+    <%= f.submit 'submit' %>
+<% end %>

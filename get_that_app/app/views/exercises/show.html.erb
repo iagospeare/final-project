@@ -1,0 +1,35 @@
+<!--<p id="notice"><%= notice %></p>-->
+
+<!--<p>-->
+  <!--<strong>Name:</strong>-->
+  <!--<%#= @exercise.name %>-->
+<!--</p>-->
+
+<!--<p>-->
+  <!--<strong>Url:</strong>-->
+  <!--<%#= @exercise.url %>-->
+<!--</p>-->
+
+<!--<p>-->
+  <!--<strong>Description:</strong>-->
+  <!--<%#= @exercise.description %>-->
+<!--</p>-->
+
+<%#= link_to 'Edit', edit_exercise_path(@exercise) %> |
+<!--<%#= link_to 'Back', exercises_path %>-->
+
+
+<div class="center jumbotron" style=" margin-top: 5%; padding:5%;background-color: rgba(245, 245, 245, 0.4)">
+	<div id="title"></div>
+  <%= link_to "Back", root_path, class: "btn btn-lg btn-primary" %>
+
+  <iframe width="420" height="315" src="https://www.youtube.com/embed/<%= @exercise.url %>" frameborder="0" allowfullscreen></iframe>
+  <div id="description"> <ul><%  x = @exercise.description.split("-") %>
+    <% x.each do |r| %>
+      <p><li> <%=r %> </li></p>
+    <%end %>
+  </ul>
+  </div>
+
+
+</div>

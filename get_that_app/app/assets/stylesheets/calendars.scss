@@ -1,0 +1,255 @@
+// Place all the styles related to the calendar controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body
+{
+	color:white;
+}
+
+#notice
+{
+	display:none;
+}
+
+p.alert.alert-success
+{
+	display:none;
+}
+
+a
+{
+	color:white;
+	text-decoration: none;
+	
+}
+
+.simple-calendar>a
+{
+	font-size:40%;
+}	
+
+
+th
+{
+	font-weight:100;
+}
+
+.simple-calendar {
+	
+	text-align:center;
+	font-size:250%;
+	
+
+	
+table{
+	text-align:initial;
+	margin: 0% 4%;
+background-color: #A31300;
+/*border-radius: 10px;*/
+padding: 40px;
+padding-bottom: 20px;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+border-collapse: collapse;
+
+
+
+}
+
+th{
+/*border-radius: 12px;*/
+padding: 6px;
+/*border-bottom: 2px solid rgb(221, 221, 221);
+border-collapse: collapse;
+border-left: 1px solid rgb(221, 221, 221);
+border-right: 1px solid rgb(221, 221, 221);
+border-top: 0px none rgb(51, 51, 51);*/
+box-sizing: border-box;
+font-size: 25px;
+background-color: none;
+height: 45px;
+text-align: center;
+/*color:black;*/
+text-decoration: underline;
+
+
+}
+td{
+/*border-radius: 17px;*/
+/*padding: 1px;*/
+width: 175px;
+height: 155px;
+/*
+border-top: 6px;
+border-top-width: 5px;*/
+
+
+
+
+margin: 0;
+padding: 0;
+   border-spacing: 0;
+
+
+color:white;
+/*margin-left: 20cm;*/
+font-size: 20px;
+}
+
+tr {
+border-collapse: collapse;
+vertical-align: text-top;
+text-indent: 16px; 
+}
+
+.wday-0 {}
+.wday-1 {}
+.wday-2 {}
+.wday-3 {}
+.wday-4 {}
+.wday-5 {}
+.wday-6 {}
+
+.today {
+/*background-color: #C42712;*/
+
+	background: repeating-linear-gradient(
+	  45deg,
+	  #A31300,
+	  #A31300 10px,
+	  #C42712 10px,
+	  #C42712 20px
+	);	
+	
+border-radius: 25px 25px 25px 25px;
+
+}
+
+.past {}
+.future {}
+
+.start-date {}
+
+.prev-month {
+background: none;
+}
+.next-month {
+background: none;
+}
+.current-month {}
+
+.has-events {}
+}
+
+tbody>tr>td
+{
+	border-top: white 1px solid;
+	border-right: white 1px solid;
+	border-bottom: white 1px solid;
+	border-left: white 1px solid;
+}
+
+tbody>tr:first-of-type>td
+{
+	border-top:none !important;
+}
+
+tbody>tr>td:first-of-type
+{
+	border-left:none !important;
+}
+
+tbody>tr:last-of-type>td
+{
+	border-bottom:none !important;
+}
+
+tbody>tr>td:last-of-type
+{
+	border-right:none !important;
+}
+
+/*.simple-calendar {
+	
+	text-align:center;
+table{
+	text-align:initial;
+	margin: 0% 4%;
+background-color: #A31300;
+border-radius: 10px;
+padding: 40px;
+padding-bottom: 20px;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+}
+
+th{
+border-radius: 12px;
+padding: 6px;
+border-bottom: 2px solid rgb(221, 221, 221);
+border-collapse: collapse;
+border-left: 1px solid rgb(221, 221, 221);
+border-right: 1px solid rgb(221, 221, 221);
+border-top: 0px none rgb(51, 51, 51);
+box-sizing: border-box;
+font-size: 25px;
+background-color: white;
+height: 45px;
+text-align: center;
+color:black;
+
+
+}
+td{
+background-color: #DDD;
+border-radius: 17px;
+padding: 1px;
+width: 175px;
+height: 155px;
+border-top: 6px;
+border-top-width: 5px;
+border-bottom-style: solid;
+border-bottom-width: 4px;
+
+color:black;
+margin-left: 20cm;
+font-size: 20px;
+}
+
+tr {
+border-collapse: collapse;
+vertical-align: text-top;
+text-indent: 16px; 
+}
+
+.wday-0 {}
+.wday-1 {}
+.wday-2 {}
+.wday-3 {}
+.wday-4 {}
+.wday-5 {}
+.wday-6 {}
+
+.today {
+background: white;
+opacity: 0.5;
+}
+
+.past {}
+.future {}
+
+.start-date {}
+
+.prev-month {
+background: #DDD;
+}
+.next-month {
+background: #DDD;
+}
+.current-month {}
+
+.has-events {}
+}
+*/
+
+
